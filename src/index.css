@@ -1,13 +1,116 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: "McLaren", sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1558051815-0f18e64e6280?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80);
+}
+
+header {
+  padding: 1rem 2rem;
+    color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  background-image: url(https://media.istockphoto.com/photos/dark-wood-background-brown-color-picture-id626755782?b=1&k=20&m=626755782&s=170667a&w=0&h=36bhzb56LHgWKKdRNZyqX8lnd3F-DWq1p9E61WTRbGM=);
+}
+
+.top {
+  background-image: url(https://media.istockphoto.com/photos/dark-wood-background-brown-color-picture-id626755782?b=1&k=20&m=626755782&s=170667a&w=0&h=36bhzb56LHgWKKdRNZyqX8lnd3F-DWq1p9E61WTRbGM=);
+  height: 100px;
+}
+
+.note {
+  font-family: "Shadows Into Light", sans-serif;
+  font-size: 2rem;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3),
+    -3px 3px 4px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgb(243, 224, 141);
+  /* height: max-content; */
+  height: 250px;
+  padding: 1rem;
+  position: relative;
+  margin: 0;
+}
+
+.pin {
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.note > h2 {
+  font-size: 2rem;
+  overflow-wrap: break-word;
+  text-transform: uppercase;
+}
+
+.note > p {
+  margin-bottom: 1rem;
+  overflow-wrap: break-word;
+}
+
+.note:hover {
+  box-shadow:8px 8px 4px rgba(0,0,0,.7);
+  transform: scale(1.2) rotate(1.1deg);
+  z-index:2;
+}
+
+.notesContainer {
+  padding: 1rem 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.inputContainer {
+  border-radius: 5px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3),
+    -3px 3px 4px 0 rgba(0, 0, 0, 0.3);
+  background-color: white;
+  width: 400px;
+  /* height: 140px; */
+  padding: 1rem;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.inputContainer input,
+.inputContainer textarea {
+  border: none;
+  outline: none;
+  font-family: "McLaren", sans-serif;
+  resize: none;
+  width: 100%;
+}
+
+.inputContainer button {
+  font-family: "McLaren", sans-serif;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  background-color: #f5ba13;
+  color: white;
+  border: 1px solid #f5ba13;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% + 140px);
+}
+
+.delete {
+  font-family: "McLaren", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f5ba13;
+  background-color: rgb(243, 224, 141);
+  border: white;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
 }
