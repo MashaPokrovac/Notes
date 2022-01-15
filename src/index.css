@@ -9,13 +9,6 @@ html {
   background-image: url(https://images.unsplash.com/photo-1558051815-0f18e64e6280?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80);
 }
 
-header {
-  padding: 1rem 2rem;
-    color: white;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  background-image: url(https://media.istockphoto.com/photos/dark-wood-background-brown-color-picture-id626755782?b=1&k=20&m=626755782&s=170667a&w=0&h=36bhzb56LHgWKKdRNZyqX8lnd3F-DWq1p9E61WTRbGM=);
-}
-
 .top {
   background-image: url(https://media.istockphoto.com/photos/dark-wood-background-brown-color-picture-id626755782?b=1&k=20&m=626755782&s=170667a&w=0&h=36bhzb56LHgWKKdRNZyqX8lnd3F-DWq1p9E61WTRbGM=);
   height: 100px;
